@@ -1,0 +1,112 @@
+* {
+    --base-color: rgb(23,23,23);
+    --umd-red: #a00;
+    color: var(--base-color);
+    margin: 0;
+    padding: 0;
+
+
+    /* make it so users cannot highlight text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+
+.base-header {
+    background: linear-gradient(
+            to top left, 
+            rgb(243,243,243),
+            rgb(223,223,233)
+        );
+    padding: 1.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title {
+    > h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.navbar {
+    a {
+        cursor: pointer;
+        padding: .75em 1em;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: .5em;
+        color: var(--base-color);
+        background: rgb(205,205,205);
+        font-weight: 500;
+        font-size: 1.1rem;
+
+        transition: color 150ms ease-out, background 150ms ease-out, border 150ms ease-out
+    }
+
+    a:hover {
+        background-color: var(--umd-red);
+        color: white;
+    }
+}
+
+.programming_languages_reviews {
+    padding: 0 1em;
+    > header {
+        text-align: center;
+        padding: 1em 0;
+        font-size: 1.75rem;
+    }
+}
+
+.faculty_reviews {
+    padding: 0 1em 1em;
+    border: 2px solid black;
+    margin-bottom: 1.5em;
+}
+
+.faculty_reviews > h2 {
+    font-size: 2rem;
+    margin: 1em 0;
+}
+
+.faculty_review {
+    border: 1.5px solid black;
+    margin-bottom: 1em;
+    padding: .75em;
+}
+
+.faculty_review > * {
+    width: calc(50% - 12px);
+}
+
+.faculty_review > h2 {
+    font-size: 1.25rem;
+}
+
+.faculty_review > p, .faculty_review > footer {
+    font-size: .95rem;
+}
+
+.faculty_review > p {
+    margin-bottom: .75em;
+
+}
+
+.faculty_review-footer > p {
+    > time {
+        font-weight: bold;
+    }
+}
+
+.faculty_reviews > article:nth-child(even) {
+    background: rgb(225,225,225)
+}
+
+
+
